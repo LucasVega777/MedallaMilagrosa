@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+{% block contenido%}  
+
+    <h1> Contacto </h1>
+    <p>
+        <span class="image left"><img src="/static/images/recepcionista.jpg" alt="" /> </span>
+        En Medalla Milagrosa, te recibiremos siempre con una sonrisa <br>
+			<h4>
+				Puedes Contactarnos mediante el siguiente correo electronico:
+			</h4>
+			<p>
+				<li class="icon solid fa-envelope"><a href="mailto:depositomedallamilagrosa@gmail.com"> depositomedallamilagrosa@gmail.com</a></li>
+			</p>
+	<br>
+	<br>
+	<p>
+		O completando el siguiente Formulario
+	</p>
+
+    <!-- Form -->
+	<h3>Formulario</h3>
+
+	<form method="post" action="/agradecimiento/"> {% csrf_token %}
+		<div class="row gtr-uniform">
+			<div class="col-6 col-12-xsmall">
+				<input type="text" name="demo-nombres" id="demo-nombres" value="" placeholder="Nombres" />
+			</div>
+            <div class="col-6 col-12-xsmall">
+				<input type="text" name="demo-apellidos" id="demo-nombres" value="" placeholder="Apellidos" />
+			</div>
+			<!-- Break -->
+			<div class="col-12">
+				<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+			</div>
+			<div class="col-12">
+				<input type="text" name="demo-direccion" id="demo-direccion" value="" placeholder="direccion" />
+			</div>
+			<div class="col-12">
+				<input type="text" name="demo-numero" id="demo-numero" value="" placeholder="Numero Celular" />
+			</div>
+			<div class="col-12">
+				<textarea name="demo-message" id="demo-message" placeholder="Escriba su Consulta" rows="6"></textarea>
+			</div>
+			<!-- Break -->
+			<div class="col-12">
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="primary" /></li>
+					<li><input type="reset" value="Reset" /></li>
+				</ul>
+			</div>
+		</div>
+	</form>
+{% endblock contenido %}

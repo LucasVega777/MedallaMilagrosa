@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> Ferreteria Medalla Milagrosa</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="/" class="logo"><strong>Medalla Milagrosa</strong> by Lucas Vega</a>
+									<ul class="icons">
+										<li><a href="https://twitter.com/lucasvegap" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/Ferreteria-Medalla-Milagrosa-722721878182706" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/lucas_vegap/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+                            {% block contenido %}   
+            	            {% endblock %}	
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="/busqueda/">{% csrf_token %}
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="/">Inicio</a></li>
+										<li><a href="/empresa/">Empresa</a></li>
+										<li><a href="/conozcanos/">Conozcanos</a></li>
+										<li><a href="/servicios/">Servicios</a></li>
+										<li><a href="/contacto/">Contacto</a></li>
+									</ul>
+								</nav>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contactanos</h2>
+									</header>
+									<p>
+										Puedes Contactarnos mediante las siguientes fuentes:
+									</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:depositomedallamilagrosa@gmail.com">depositomedallamilagrosa@gmail.com</a></li>
+										<li class="icon solid fa-phone"> 0983 708 564</li>
+										<li class="icon solid fa-home"> Ruta Acceso Sur km 29 <br />
+										Ita, Paraguay</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; </a>. Design: <a href="https://github.com/LucasVega777/">Lucas Vega</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
